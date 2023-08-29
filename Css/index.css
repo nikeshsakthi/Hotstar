@@ -1,0 +1,837 @@
+/*:root {
+    --font-family	: Roboto, HelveticaNeue-Light, sans-serif;
+    --white50 		: rgba(255, 255, 255, 0.5);
+    --white60 		: rgba(255, 255, 255, 0.6);
+    --white75	 	: rgba(255, 255, 255, 0.75);
+    --white80 		: rgba(255, 255, 255, 0.8);
+    --brand-color 	: #1f80e0;
+  }
+  */
+
+@media screen and (max-width:2000px)
+
+{	
+	
+*{
+    margin			: 0px;
+    font-family		: Roboto, HelveticaNeue-Light, sans-serif;
+    color			: rgba(255, 255, 255, 0.8);
+}
+
+body{
+    background-color: #131927;
+}  
+ 
+nav .btn-hamburger{
+	cursor: pointer;
+    margin-left: 50px;
+}
+
+.btn-hamburger .icon-wrapper{
+	position: relative;
+    padding: 20px;
+    margin-left: -10px;
+}
+
+.btn-hamburger .icon-wrapper .line{
+	width: 18px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.6);
+    display: block;
+}
+
+.btn-hamburger .icon-wrapper .line:nth-child(2){
+	margin-top: 3px;
+    margin-bottom: 3px;   
+}
+
+nav{
+    width			: 100%;
+    display			: flex;
+    height			: 90px;
+    align-items		: center;
+    background-color: #131927;
+}
+
+#disney-hotstar-logo-dark{
+    height			: 35px;
+    margin-bottom	: 9px;
+	cursor			:pointer;
+}
+
+
+#search-input{
+    border-width	: 0px 0px 1px 0px;
+    width			: 240px;
+    outline			: none;
+    background-color: #131927;
+}
+
+#search-input::placeholder{
+    color			: red;
+    color			: rgba(255, 255, 255, 0.8);
+    font-size		: 16px;
+    font-weight		:400;
+}
+
+#search-input:focus{
+    width			: 360px;
+    border-color	: #1f80e0;
+    
+}
+
+#right-nav{
+    display			: flex;
+    justify-content	: space-around;
+    margin-left		: auto;
+    margin-right	: 20px;
+    align-items		: center;
+}
+
+#subscribe button{
+    margin			: 20px;
+    border			: none;
+    display			: flex;
+	cursor			: pointer;	
+    align-items		: center;
+    justify-content	: center;
+    background-color: #1f80e0;
+    height			: 30px;
+    width			: 90px;
+    border-radius	: 4px;
+    color			: white;
+    line-height		: 24px;
+    font-weight		: 700;
+    font-size		: 12px;
+    text-decoration	: none;
+}
+
+#login{
+    margin-right	: 10px;
+    font-size		: 16px;
+	cursor			: pointer;
+    color			: rgba(255, 255, 255, 0.8);
+}
+
+#navigation ul{
+    width			:fit-content ;
+    display			: flex;
+    justify-content	:space-around;
+    list-style		: none;
+    align-items		: center;
+}
+
+#navigation  ul li{
+    margin			: 15px;
+    font-size		: 16px;
+    font-weight		: 400;
+    cursor			: pointer;
+    white-space		: nowrap;
+}
+
+#navigation ul li:hover{
+    color			: white;
+}
+
+.movies-container{
+	width:100%;
+	height:450px;
+//	background-color:yellow;
+}
+
+.large-movie{
+	width:100%;
+	height:440px;
+//	background-color:red;
+}
+
+.left-large-movie{
+	background-color:black;
+	height:400px;
+	width:35px;
+	border-radius:0px 10px 10px 0px;
+	float:left;
+	margin:0px 25px 0px 0px;
+}
+
+.middle-large-movie{
+	background-color:black;
+	//background: url('Hotstar/Images/middle-large-image.jpg');
+	height:400px;
+	width:1400px;
+	border-radius:10px 10px 10px 10px;
+	float:left;
+	margin:0px 25px 0px 0px;
+}
+
+.right-large-movie{
+	background-color:black;
+	height:400px;
+	width:32px;
+	border-radius:10px 0px 0px 10px;
+	float:left;
+}
+
+.movie-content{
+//	background-color:gray;
+	width:600px;
+	height:200px;
+	margin:0px 0px 0px 80px;
+}
+
+.movie-content h1{
+	font-size:35px;
+}
+
+.movie-content h4{
+	font-size:20px;
+	margin : 20px 0px 0px 0px;
+}
+
+.movie-content span{
+	margin : 0px 15px 0px 0px;	
+}
+
+.movie-content p{
+	margin : 45px 0px 0px 0px;
+	width:550px;
+	font-size:18px;
+	line-height:30px;
+}
+
+.small-movie{
+//	background-color:gray;
+	width:1423px;
+	height:300px;
+	clear:both;
+	margin:0px 0px 0px 50px;
+}
+
+.small-movie-header h1{
+	font-size:22px;
+	font-weight:700;
+	width:190px;
+//	background-color:red;
+}
+
+.small-movie-header h1:hover{
+	font-size:22px;
+	font-weight:700;
+	color:#1f80e0;
+	cursor:pointer;
+}
+
+.small-movie-header2 h1{
+	font-size:22px;
+	font-weight:700;
+	width:290px;
+//	background-color:red;
+}
+
+.small-movie-header2 h1:hover{
+	font-size:22px;
+	font-weight:700;
+	color:#1f80e0;
+	cursor:pointer;
+}
+
+.small-movie-banner{
+//	background-color:green;
+	width:100%;
+	height:200px;
+	margin:15px 0px 0px 0px;
+}
+
+.small-movie-single{
+	width:148px;
+	height:200px;
+//	background-color:violet;
+	border-radius:10px;
+	margin:0px 10px 0px 0px;
+	float:left;
+}
+
+.small-movie-single-last{
+	width:38px;
+	height:200px;
+//	background-color:violet;
+	border-radius:10px 0px 0px 10px;
+	float:left;
+}
+
+
+footer{
+    width			: 100%;
+    height			: 154px;
+    align-self		: center;
+    display			: flex;
+    font-size		: 12px;
+    font-weight		: 400;
+    line-height		: 2.0;
+	margin			:50px 0px 0px 0px;
+//	background-color:skyblue;
+}
+
+.footer-about{
+    width			: 720px;
+    margin			:0px 40px 0px 25px;
+}
+.about-paragraph{
+    margin-top		: 11px;
+	padding-top		: 11px;
+    font-size		: 12px;
+    line-height		: 1.8;
+    font-weight		: 400;
+}
+.about-link ul{
+    display			:flex;
+    padding			: 0px;
+}
+.about-link ul li{
+    list-style		: none;
+	font-size		:14px;
+	font-weight		:400;
+    margin			:0px 25px 0px 0px;
+}
+.about-link ul li a{
+    text-decoration	: none;
+}
+.about-link ul li a:hover{
+    color			: blue;
+}
+#social-media-account{
+    width			: 200px;
+    display			: flex;
+	margin			:0px 100px 0px 0px;
+}
+
+.social-media-accounts{
+	height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.footer .social-media-accounts a{
+	    background: url('https://www.hotstar.com/assets/00dd72dcb62378da1988866159d26cca.svg') left top no-repeat;
+}
+
+.footer .social-media-accounts a.fb{
+	    background-position: 0 0;
+}
+
+.footer .social-media-accounts a.fb:hover{
+	    background-position: 0 -45px;
+}
+
+.footer .social-media-accounts a.tw{
+	        background-position: -45px 0;
+}
+
+.footer .social-media-accounts a.tw:hover{
+	        background-position: -45px -45px;
+}
+
+.fb{
+	
+	width:40px;
+	height:40px;
+	margin :0px 5px 0px 0px;
+}
+
+.tw{
+	width:40px;
+	height:40px;
+}
+
+.footer .app .app-unit a{
+	height: 40px;
+    width: 135px;
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.footer .app .app-unit a{
+	    background: url('https://www.hotstar.com/assets/67764ffe0b6b18e06d60049a00c86335.svg') left top no-repeat;
+}
+
+body > footer > div.app > div > a.playstore{
+	background-position: 0px 0px;
+}
+
+body > footer > div.app > div > a.playstore:hover{
+	background-position: 0px -50px;
+}
+
+body > footer > div.app > div.app-unit > a.appstore{
+	background-position: -140px 0px;
+}
+
+body > footer > div.app > div.app-unit > a.appstore:hover{
+	background-position: -140px -50px;
+}
+}
+
+@media screen and (max-width:500px)
+{
+	body{
+		width:450px;
+		height:650px;
+		background-color:red;
+	}
+	
+	#navigation{
+		display:none;
+	}
+	
+
+nav .btn-hamburger{
+	cursor: pointer;
+    margin-left: 5px;
+}
+
+.btn-hamburger .icon-wrapper{
+	position: relative;
+    padding: 15px;
+    margin-left: -10px;
+}
+
+.btn-hamburger .icon-wrapper .line{
+	width: 16px;
+    height:2px;
+    background: rgba(255, 255, 255, 0.6);
+    display: block;
+}
+
+nav{
+    width			: 485px;
+    display			: flex;
+    height			: 60px;
+    align-items		: center;
+    background-color: #131927;
+}
+
+#disney-hotstar-logo-dark{
+    height			: 32px;
+    margin-bottom	: 8px;
+}
+
+#search-input{
+    border-width	: 0px 0px 1px 0px;
+    width			: 130px;
+    outline			: none;
+    background-color: #131927;
+}
+
+#search-input::placeholder{
+    color			: red;
+    color			: rgba(255, 255, 255, 0.8);
+    font-size		:12px;
+    font-weight		:400;
+}
+
+#search-input:focus{
+    width			: 160px;
+    border-color	: #1f80e0; 
+}
+
+#right-nav{
+    display			: flex;
+    justify-content	: space-around;
+    margin-left		: auto;
+    margin-right	: 20px;
+    align-items		: center;
+}
+
+#subscribe button{
+    margin			: 20px;
+    border			: none;
+    display			: flex;
+    align-items		: center;
+    justify-content	: center;
+    background-color: #1f80e0;
+    height			: 20px;
+    width			: 70px;
+    border-radius	: 4px;
+    color			: white;
+    line-height		: 24px;
+    font-weight		: 700;
+    font-size		: 10px;
+    text-decoration	: none;
+}
+
+#login{
+    margin-right	: 10px;
+    font-size		: 14px;
+    color			: rgba(255, 255, 255, 0.8);
+}
+
+.btn-hamburger .icon-wrapper .line:nth-child(2){
+	margin-top: 2px;
+    margin-bottom: 2px;   
+}
+
+#navigation ul{
+    width			:fit-content ;
+    display			:none;
+    justify-content	:space-around;
+    list-style		:none;
+    align-items		:center;
+}
+
+#navigation  ul li{
+    margin			:15px;
+    font-size		:16px;
+    font-weight		:400;
+    cursor			:pointer;
+    white-space		:nowrap;
+    display			:none;
+}
+
+#navigation ul li:hover{
+    color			:white;
+    display			:none;
+}
+
+.movies-container{
+	width:490px;
+	height:160px;
+//	background-color:yellow;
+}
+
+.large-movie{
+	width:490px;
+	height:150px;
+//	background-color:red;
+}
+
+.left-large-movie{
+	background-color:black;
+	height:150px;
+	width:10px;
+	border-radius:0px 10px 10px 0px;
+	float:left;
+	margin:0px 10px 0px 0px;
+}
+
+	.middle-large-movie{
+	background-color:black;
+	background: url('Hotstar/Images/middle-large-image-mb.jpg');
+	height:150px;
+	width:445px;
+	border-radius:10px 10px 10px 10px;
+	float:left;
+	margin:0px 10px 0px 0px;
+	}
+
+.right-large-movie{
+	background-color:black;
+	height:150px;
+	width:10px;
+	border-radius:10px 0px 0px 10px;
+	float:left;
+}
+
+.movie-content{
+//	background-color:gray;
+	width:350px;
+	height:50px;
+	margin:70px 0px 5px 10px;
+	
+}
+
+.movie-content h1{
+	font-size:12px;
+}
+
+.movie-content h4{
+	font-size:11px;
+	margin : 5px 0px 0px 0px;
+}
+
+.movie-content span{
+	margin : 0px 10px 15px 0px;	
+}
+
+.movie-content p{
+	margin : 0px 0px 0px 0px;
+	width:400px;
+	font-size:11px;
+	line-height:20px;
+}
+
+#main-body{
+	width:485px;
+	height:900px;
+	background-color:gray;
+	
+}
+.small-movie{
+//	background-color:gray;
+	width:450px;
+	height:300px;
+	clear:both;
+	margin:10px 10px 10px 30px;
+}
+
+.small-movie-header h1{
+	font-size:22px;
+	font-weight:600;
+	width:190px;
+//	background-color:red;
+}
+
+.small-movie-header h1:hover{
+	font-size:22px;
+	font-weight:600;
+	color:#1f80e0;
+	cursor:pointer;
+}
+
+.small-movie-header2 h1{
+	font-size:22px;
+	font-weight:600;
+	width:290px;
+//	background-color:red;
+}
+
+.small-movie-header2 h1:hover{
+	font-size:22px;
+	font-weight:600;
+	color:#1f80e0;
+	cursor:pointer;
+}
+
+.small-movie-banner{
+//	background-color:green;
+	width:440px;
+	height:150px;
+	margin:15px 10px 10px 5px;
+}
+
+.small-movie-single{
+	width:100px;
+	height:150px;
+//	background-color:violet;
+	border-radius:10px;
+	margin:0px 10px 10px 0px;
+	float:left;
+}
+
+.small-movie-single-last{
+	width:18px;
+	height:150px;
+//	background-color:violet;
+	border-radius:10px 0px 0px 10px;
+	float:left;
+}
+
+.small-movie-single.movie1{
+	background: url('Hotstar/Images/movie1-mb.jpg');
+}
+
+.small-movie-single.movie2{
+	background: url('Hotstar/Images/movie2-mb.jpg');	
+}
+
+.small-movie-single.movie3{
+	background: url('Hotstar/Images/movie3-mb.jpg');	
+}
+
+.small-movie-single.movie4{
+	background: url('Hotstar/Images/movie4-mb.jpg');	
+}
+
+.small-movie-single.movie5{
+	background: url('Hotstar/Images/movie5-mb.jpg');	
+}
+
+.small-movie-single.movie6{
+	background: url('Hotstar/Images/movie6-mb.jpg');
+	display:none;
+}
+
+.small-movie-single.movie7{
+	background: url('Hotstar/Images/movie7-mb.jpg');	
+
+}
+
+.small-movie-single.movie8{
+	background: url('Hotstar/Images/movie8-mb.jpg');	
+
+}
+
+.small-movie-single-last.movie9{
+	background: url('Hotstar/Images/movie9-mb.jpg');
+
+}
+
+.small-movie-single.movie11{
+	background: url('Hotstar/Images/movie11-mb.jpg');
+	
+}
+
+.small-movie-single.movie12{
+	background: url('Hotstar/Images/movie12-mb.jpg');	
+}
+
+.small-movie-single.movie13{
+	background: url('Hotstar/Images/movie13-mb.jpg');
+}
+
+.small-movie-single.movie14{
+	background: url('Hotstar/Images/movie14-mb.jpg');	
+
+}
+
+.small-movie-single.movie15{
+	background: url('Hotstar/Images/movie15-mb.jpg');
+
+}
+
+.small-movie-single.movie16{
+	background: url('Hotstar/Images/movie16-mb.jpg');
+	
+}
+
+.small-movie-single.movie17{
+	background: url('Hotstar/Images/movie17-mb.jpg');
+}
+
+.small-movie-single.movie18{
+	background: url('Hotstar/Images/movie18-mb.jpg');	
+}
+
+.small-movie-single-last.movie19{
+	background: url('Hotstar/Images/movie19-mb.jpg');
+}
+
+footer{
+    width			: 380px;
+    height			: 134px;
+    align-self		: center;
+    display			: flex;
+    font-size		: 15px;
+    font-weight		: 500;
+    line-height		: 2.0;
+	margin			:10px 0px 0px 0px;
+//	background-color:skyblue;
+}
+
+.footer-about{
+    width			: 450px;
+    margin			:0px 10px 0px 10px;
+}
+.about-paragraph{
+    margin-top		: 11px;
+	padding-top		: 11px;
+    font-size		: 9px;
+    line-height		: 1.8;
+    font-weight		: 400;
+}
+.about-link ul{
+    display			:flex;
+    padding			: 0px;
+}
+.about-link ul li{
+    list-style		: none;
+	font-size		:9px;
+	font-weight		:500;
+    margin			:0px 5px 0px 0px;
+}
+.social-media{
+	margin:-3px -80px 0px 0px;
+	font-size:12px;
+}
+.about-link ul li a{
+    text-decoration	: none;
+}
+.about-link ul li a:hover{
+    color			: blue;
+}
+#social-media-account{
+    width			:100px;
+    display			:flex;
+	margin			:0px 10px 0px 0px;
+}
+
+.social-media-accounts{
+	height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.footer .social-media-accounts a{
+	    background: url('https://www.hotstar.com/assets/00dd72dcb62378da1988866159d26cca.svg') left top no-repeat;
+}
+
+.footer .social-media-accounts a.fb{
+	    background-position: 0 0;
+}
+
+.footer .social-media-accounts a.fb:hover{
+	    background-position: 0 -45px;
+}
+
+.footer .social-media-accounts a.tw{
+	        background-position: -45px 0;
+}
+
+.footer .social-media-accounts a.tw:hover{
+	        background-position: -45px -45px;
+}
+
+.fb{
+	
+	width:40px;
+	height:40px;
+	margin :0px 5px 0px 0px;
+}
+
+.tw{
+	width:40px;
+	height:40px;
+}
+
+.app{
+	display:none;
+	
+}
+.footer .app .app-unit a{
+	height: 40px;
+    width: 135px;
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+	display:none;
+}
+
+.footer .app .app-unit a{
+	    background: url('https://www.hotstar.com/assets/67764ffe0b6b18e06d60049a00c86335.svg') left top no-repeat;
+		display:none;
+}
+
+body > footer > div.app > div > a.playstore{
+	background-position: 0px 0px;
+	display:none;
+}
+
+body > footer > div.app > div > a.playstore:hover{
+	background-position: 0px -50px;
+	display:none;
+}
+
+body > footer > div.app > div.app-unit > a.appstore{
+	background-position: -140px 0px;
+	display:none;
+}
+
+body > footer > div.app > div.app-unit > a.appstore:hover{
+	background-position: -140px -50px;
+	display:none;
+}
+}
